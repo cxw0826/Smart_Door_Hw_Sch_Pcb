@@ -1,0 +1,186 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              05/01/2017 22:10:16 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: d:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND TABS(2)
+
+line level    source
+
+   1          /*------------------------------------------------------------*- 
+   2            红外收发.C 
+   3            ------------------------------------------------------------ 
+   4            遥控器测试 
+   5          -*------------------------------------------------------------*/  
+   6            
+   7          #include <STC15.H>  
+   8            
+   9          // --- 红外接收一体化输出口 ----------------------------------  
+  10          sbit IR_Out = P3^5;  
+  11            
+  12          bit START_Flag = 0;  
+  13          bit BOOT_REPEATING_CODE_Flag = 0;  
+  14          unsigned char DATA[4] = {0};  
+  15          bdata unsigned char TEMP_BIT;  
+  16            
+  17          sbit B0 = TEMP_BIT^0;  
+  18          sbit B1 = TEMP_BIT^1;  
+  19          sbit B2 = TEMP_BIT^2;  
+  20          sbit B3 = TEMP_BIT^3;  
+  21          sbit B4 = TEMP_BIT^4;  
+  22          sbit B5 = TEMP_BIT^5;  
+  23          sbit B6 = TEMP_BIT^6;  
+  24          sbit B7 = TEMP_BIT^7;  
+  25            
+  26          // --- 有无遥控信号判断函数 ----------------------------------  
+  27          bit START_Judge();  
+  28            
+  29          // --- 连发码判断函数 ----------------------------------------  
+  30          bit BOOT_REPEATING_CODE_Judge();  
+  31            
+  32          // --- "0"和"1"识别 ------------------------------------------  
+  33          bit H_L_LEVEL_Judge();  
+  34            
+  35          // --- 串口初始化 --------------------------------------------  
+  36          void UART_Initial();  
+  37            
+  38          void DELAY_Us(unsigned int Us)  
+  39          {  
+  40   1          unsigned int x;  
+  41   1          for(x = 0; x <= (Us/200-1); x++);  
+  42   1      }  
+  43          void DELAY_Ms(unsigned int Ms)  
+  44          {  
+  45   1          unsigned int x,y;  
+  46   1          for(x = 0; x <= (Ms-1); x++)  
+  47   1          {  
+  48   2              for(y = 0; y <= 120; y++);  
+  49   2          }  
+  50   1      }  
+  51            
+  52          void main()  
+  53          {  
+  54   1          unsigned char i;  
+  55   1          UART_Initial();  
+C51 COMPILER V9.52.0.0   MAIN                                                              05/01/2017 22:10:16 PAGE 2   
+
+  56   1          IR_Out = 1;  
+  57   1          while(1)  
+  58   1          {         
+  59   2              START_Flag = START_Judge();  
+  60   2              BOOT_REPEATING_CODE_Flag = BOOT_REPEATING_CODE_Judge();  
+  61   2              if ( START_Flag && !BOOT_REPEATING_CODE_Flag )  
+  62   2              {             
+  63   3                  for(i =0;i <4; i++)  
+  64   3                  {                 
+  65   4                      B0 = H_L_LEVEL_Judge();  
+  66   4                      B1 = H_L_LEVEL_Judge();  
+  67   4                      B2 = H_L_LEVEL_Judge();  
+  68   4                      B3 = H_L_LEVEL_Judge();  
+  69   4                      B4 = H_L_LEVEL_Judge();  
+  70   4                      B5 = H_L_LEVEL_Judge();  
+  71   4                      B6 = H_L_LEVEL_Judge();  
+  72   4                      B7 = H_L_LEVEL_Judge();                               
+  73   4                      DATA[i] = TEMP_BIT;  
+  74   4                  }  
+  75   3                  for(i =0;i <4; i++)  
+  76   3                  {  
+  77   4                      SBUF = DATA[i];  
+  78   4                      while( TI == 0 );  
+  79   4                      TI = 0;  
+  80   4                  }  
+  81   3              }  
+  82   2              DELAY_Ms(500);
+  83   2          }  
+  84   1      }  
+  85            
+  86          void UART_Initial()  
+  87          {  
+  88   1          SCON = 0x50;            // SCON: 模式 1, 8-bit UART, 使能接收  
+  89   1        
+  90   1          TMOD |= 0x20;           // TMOD: timer 1, mode 2, 8-bit reload  
+  91   1        
+  92   1          TH1 = 0xFD;             // TH1: reload value for 9600 baud @  
+  93   1                                  // 11.0592MHz   
+  94   1          TR1 = 1;                // TR1: timer 1 run  
+  95   1        
+  96   1          EA = 0;                 // 关闭总中断  
+  97   1          ES = 0;                 // 关闭串口中断  
+  98   1      }  
+  99                
+ 100            
+ 101          bit START_Judge()  
+ 102          {  
+ 103   1          bit TEMP_Flag = 1;  
+ 104   1          unsigned char i = 0;  
+ 105   1        
+ 106   1          //在正常无遥控信号时，一体化红外接收头输出是高电平，程序一直在循环。 
+             - 
+ 107   1          while ( IR_Out == 1);  
+ 108   1        
+ 109   1          //重复10次，目的是检测在6876~8352微秒内如果出现高电平就退出解码程序  
+ 110   1          for(i =0;i <9; i++)  
+ 111   1          {  
+ 112   2              DELAY_Us(800);      // 测试实际延时约为764~928us  
+ 113   2              if ( IR_Out == 1 )  
+ 114   2              {  
+ 115   3                  TEMP_Flag = 0;  
+ 116   3                  break;  
+C51 COMPILER V9.52.0.0   MAIN                                                              05/01/2017 22:10:16 PAGE 3   
+
+ 117   3              }  
+ 118   2          }  
+ 119   1            
+ 120   1          return TEMP_Flag;  
+ 121   1      }  
+ 122            
+ 123          bit BOOT_REPEATING_CODE_Judge()  
+ 124          {  
+ 125   1          bit TEMP_Flag = 1;  
+ 126   1          while( IR_Out == 0 ) ;  // 等待高电平避开9毫秒低电平引导脉冲  
+ 127   1        
+ 128   1          DELAY_Ms(1);            // 测试实际延时约为1.007ms   
+ 129   1          DELAY_Ms(1);            // 测试实际延时约为1.007ms   
+ 130   1          DELAY_Us(200);          // 0.086ms  
+ 131   1          DELAY_Us(200);          // 0.086ms    
+ 132   1          DELAY_Us(200);          // 0.086ms  
+ 133   1                                  // 共计2.272ms      
+ 134   1        
+ 135   1          if( IR_Out == 0 )  
+ 136   1          {  
+ 137   2              TEMP_Flag = 1;      // 是连发码  
+ 138   2          }  
+ 139   1          else  
+ 140   1          {  
+ 141   2              TEMP_Flag = 0;      // 不是连发码，而是引导码  
+ 142   2          }  
+ 143   1          return TEMP_Flag;  
+ 144   1      }  
+ 145          bit H_L_LEVEL_Judge()  
+ 146          {  
+ 147   1          while( IR_Out == 0 );   // 等待地址码第一位的高电平信号  
+ 148   1          DELAY_Us(800);          // 测试实际延时约为764~928us  
+ 149   1          if ( IR_Out == 1)  
+ 150   1          {  
+ 151   2              DELAY_Ms(1);        // 测试实际延时约为1.007ms   
+ 152   2              return 1;  
+ 153   2          }  
+ 154   1          else  
+ 155   1          {  
+ 156   2              return 0;  
+ 157   2          }  
+ 158   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    307    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      5       1
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      2       2
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

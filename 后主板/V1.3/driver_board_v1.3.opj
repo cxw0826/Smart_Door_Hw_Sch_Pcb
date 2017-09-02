@@ -1,0 +1,160 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\library1.olb"
+        (Type "Schematic Library"))
+      (File "E:\History\Sch_Library\Sch_Library.OLB"
+        (Type "Schematic Library")))
+    (File ".\driver_board_v1.3.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify)
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (Netlist_TAB "8")
+    (OTHER_Part_Value "{Value}")
+    (OTHER_Netlist_File "DRIVER_BOARD_V1.3.asc")
+    (OTHER_Netlist_File2 "DRIVER_BOARD_V1.3.CMP")
+    (OTHER_View_Output "FALSE")
+    (OTHER_View_Output2 "FALSE")
+    (OTHER_Formatter "orPadspcb.dll")
+    (OTHER_PCB_Footprint "{PCB Footprint}")
+    (OTHER_Switch0 "FALSE")
+    (OTHER_Switch1 "FALSE")
+    (OTHER_Switch2 "FALSE")
+    (OTHER_Switch3 "FALSE")
+    (OTHER_Switch4 "FALSE")
+    (OTHER_Switch5 "FALSE")
+    (OTHER_Switch6 "FALSE")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File "C:\USERS\ALPHA\DESKTOP\V1.3\DRIVER_BOARD_V1.3.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0
+       "{Item}\t{Quantity}\t{Reference}\t{Value}\t{PCB Footprint}")
+    (BOM_Header "Item\tQuantity\tReference\tPart\tPCB Footprint")
+    (BOM_Include_File "C:\USERS\ALPHA\DESKTOP\V1.3\DRIVER_BOARD_V1.3.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE"))
+  (Folder "Outputs"
+    (File ".\driver_board_v1.3.asc"
+      (Type "Report"))
+    (File ".\driver_board_v1.3.bom"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Design Resources"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 367"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1407 25 646")
+        (Scroll "581 1028")
+        (Zoom "292")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\DRIVER_BOARD_V1.3.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "01: DOOR_MOTOR"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1482 100 721")
+        (Scroll "-65 8")
+        (Zoom "103")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\DRIVER_BOARD_V1.3.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "03: CLOSE_DETECT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 175 1557 175 796")
+        (Scroll "-70 8")
+        (Zoom "103")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\DRIVER_BOARD_V1.3.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "02: BAT_CHARG"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 225 1607 225 846")
+        (Scroll "560 95")
+        (Zoom "206")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\DRIVER_BOARD_V1.3.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "04: POWER_SUPPLY"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 275 1657 275 896")
+        (Scroll "-281 -3")
+        (Zoom "66")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\DRIVER_BOARD_V1.3.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "05: MCU"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 25 1407 25 646")
+        (Scroll "-65 8")
+        (Zoom "103")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\DRIVER_BOARD_V1.3.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "06: VOICE"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1532 150 771")
+        (Scroll "-65 8")
+        (Zoom "103")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\DRIVER_BOARD_V1.3.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "07: RF_433MHZ")))
+  (PartMRUSelector
+    (FS1000A
+      (FullPartName "FS1000A.Normal")
+      (LibraryName "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\LIBRARY1.OLB")
+      (DeviceIndex "0"))
+    (INDUCTOR
+      (FullPartName "INDUCTOR.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (CAP
+      (FullPartName "CAP.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (XL6008E
+      (FullPartName "XL6008E.Normal")
+      (LibraryName "D:\WORKSTATION\DOOR_LOCK\后主板\V1.3\LIBRARY1.OLB")
+      (DeviceIndex "0")))
+  (ISPCBBASICLICENSE "false"))

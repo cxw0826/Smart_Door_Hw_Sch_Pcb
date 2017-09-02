@@ -1,0 +1,208 @@
+(PCB DISP_V1.1
+ (description
+  (timeStamp "2017 05 26 13 40 11")
+  (program "CAPTURE.EXE" (Version "16.5.0.p001"))
+  (source "Original data from OrCAD/CAPTURE schematic")
+  (title "")
+  (date "Friday, May 26, 2017")
+  (document "D:\\WORKSTATION\\DOOR_LOCK\\œ‘ æ∆¡\\V1.1\\DISP_V1.1.DSN")
+  (revision "")
+  (organization "")
+  (address1 "")
+  (address2 "")
+  (address3 "")
+  (address4 "")
+  (partvaluecombine "{Value}")
+  (pcbfootprintcombine "{PCB Footprint}"))
+ (structure )
+ (placement
+  (component SPI
+   (place CON1
+    (property 
+     ("PCB Footprint" 0.96OLED)
+     (timestamp 0001FEAA)
+     ("Source Package" SPI)
+     (Value SPI))))
+  (component LED_2
+   (place LED1
+    (property 
+     ("PCB Footprint" "LED-T-4P")
+     (timestamp 0001FFEC)
+     ("Source Package" LED_2)
+     (Value LED))))
+  (component R
+   (place R1
+    (property 
+     ("PCB Footprint" R0603)
+     (timestamp 00020075)
+     ("Source Package" R)
+     (Value 470R)))
+   (place R2
+    (property 
+     ("PCB Footprint" R0603)
+     (timestamp 00020099)
+     ("Source Package" R)
+     (Value 100R)))
+   (place R3
+    (property 
+     ("PCB Footprint" R0603)
+     (timestamp 00020087)
+     ("Source Package" R)
+     (Value 330R))))
+  (component CON10
+   (place CON2
+    (property 
+     ("PCB Footprint" "FPC-10P-0.5")
+     (timestamp 00020119)
+     ("Source Package" CON10)
+     (Value "FPC-10P")))))
+ (library
+  (image SPI
+   (property 
+    (sourcelib D:\\WORKSTATION\\DOOR_LOCK\\œ‘ æ∆¡\\V1.1\\LIBRARY1.OLB))
+   (pin 999 1
+    (property 
+     (pinname GND)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname VCC)
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname D0)
+     (pintype 4)))
+   (pin 999 4
+    (property 
+     (pinname D1)
+     (pintype 4)))
+   (pin 999 5
+    (property 
+     (pinname RES)
+     (pintype 4)))
+   (pin 999 6
+    (property 
+     (pinname DC)
+     (pintype 4)))
+   (pin 999 7
+    (property 
+     (pinname CS)
+     (pintype 4))))
+  (image CON10
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\CONNECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname 3)
+     (pintype 4)))
+   (pin 999 4
+    (property 
+     (pinname 4)
+     (pintype 4)))
+   (pin 999 5
+    (property 
+     (pinname 5)
+     (pintype 4)))
+   (pin 999 6
+    (property 
+     (pinname 6)
+     (pintype 4)))
+   (pin 999 7
+    (property 
+     (pinname 7)
+     (pintype 4)))
+   (pin 999 8
+    (property 
+     (pinname 8)
+     (pintype 4)))
+   (pin 999 9
+    (property 
+     (pinname 9)
+     (pintype 4)))
+   (pin 999 10
+    (property 
+     (pinname 10)
+     (pintype 4))))
+  (image R
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4))))
+  (image LED_2
+   (property 
+    (sourcelib D:\\WORKSTATION\\DOOR_LOCK\\œ‘ æ∆¡\\V1.1\\DISP_V1.0.DSN))
+   (pin 999 4
+    (property 
+     (pinname P)
+     (pintype 4)))
+   (pin 999 1
+    (property 
+     (pinname VG)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname QB)
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname UR)
+     (pintype 4)))))
+ (network
+  (net GND
+    (property 
+     (nettype S))
+   (pins
+     CON1-1 CON2-9))
+  (net GPIO_CS
+   (pins
+     CON1-7 CON2-8))
+  (net GPIO_DC
+   (pins
+     CON1-6 CON2-7))
+  (net "GPIO_LED-B"
+   (pins
+     R2-2 CON2-2))
+  (net "GPIO_LED-G"
+   (pins
+     R3-2 CON2-3))
+  (net "GPIO_LED-R"
+   (pins
+     R1-2 CON2-10))
+  (net GPIO_RES
+   (pins
+     CON1-5 CON2-6))
+  (net N131233
+   (pins
+     LED1-3 R1-1))
+  (net N131278
+   (pins
+     LED1-2 R2-1))
+  (net N131290
+   (pins
+     LED1-1 R3-1))
+  (net SPI_CLK_D0
+   (pins
+     CON1-3 CON2-4))
+  (net SPI_MOSI_D1
+   (pins
+     CON1-4 CON2-5))
+  (net VCC_3V3
+    (property 
+     (nettype S))
+   (pins
+     CON1-2 LED1-4 CON2-1)))
+)

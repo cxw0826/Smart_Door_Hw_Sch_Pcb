@@ -1,0 +1,166 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (File ".\out_v1.1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify)
+    (Netlist_TAB "8")
+    (OTHER_Part_Value "{Value}")
+    (OTHER_Netlist_File "OUT_V1.1.asc")
+    (OTHER_Netlist_File2 "OUT_V1.1.CMP")
+    (OTHER_View_Output "FALSE")
+    (OTHER_View_Output2 "FALSE")
+    (OTHER_Formatter "orPadspcb.dll")
+    (OTHER_PCB_Footprint "{PCB Footprint}")
+    (OTHER_Switch0 "FALSE")
+    (OTHER_Switch1 "FALSE")
+    (OTHER_Switch2 "FALSE")
+    (OTHER_Switch3 "FALSE")
+    (OTHER_Switch4 "FALSE")
+    (OTHER_Switch5 "FALSE")
+    (OTHER_Switch6 "FALSE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE"))
+  (Folder "Outputs"
+    (File ".\out_v1.1.asc"
+      (Type "Report"))
+    (File ".\out_v1.1.bom"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "D:\workstation\Door_Lock\前面主板\V1.1\out_v1.1.dsn")
+      (Path "Design Resources"
+         "D:\workstation\Door_Lock\前面主板\V1.1\out_v1.1.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "D:\workstation\Door_Lock\前面主板\V1.1\out_v1.1.dsn" "SCHEMATIC1"
+         "00: STM32"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 367"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1482 100 721")
+        (Scroll "0 0")
+        (Zoom "85")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "00: STM32"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 250 1632 250 871")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "01: KEY-RFID"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 275 1657 275 896")
+        (Scroll "35 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "02: OLED"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 1382 0 621")
+        (Scroll "0 120")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "03: FINGER_DETECT"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 50 1432 50 671")
+        (Scroll "0 130")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "04: LED"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 100 1482 100 721")
+        (Scroll "-69 0")
+        (Zoom "73")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "05: KEY_MOTOR"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 150 1532 150 771")
+        (Scroll "91 446")
+        (Zoom "94")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "06: VOICE"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 200 1582 200 821")
+        (Scroll "-284 -6")
+        (Zoom "47")
+        (Occurrence "/"))
+      (Path "D:\WORKSTATION\DOOR_LOCK\前面主板\V1.1\OUT_V1.1.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "07: CONNECTOR")))
+  (PartMRUSelector
+    (CON2
+      (FullPartName "CON2.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CON5
+      (FullPartName "CON5.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CON4
+      (FullPartName "CON4.Normal")
+      (LibraryName "D:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0")))
+  (ISPCBBASICLICENSE "false"))

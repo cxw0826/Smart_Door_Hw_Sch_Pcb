@@ -1,0 +1,20 @@
+  Revised: Friday, May 26, 2017
+          Revision: 
+
+
+
+
+
+
+
+Bill Of Materials           July 6,2017      21:56:02	Page1
+
+Item	Quantity	Reference	Part	PCB Footprint
+______________________________________________
+
+1	1	CON1	SPI	0.96OLED
+2	1	CON2	FPC-10P	FPC-10P-0.5
+3	1	LED1	LED	LED-T-4P
+4	1	R1	470R	R0603
+5	1	R2	100R	R0603
+6	1	R3	330R	R0603

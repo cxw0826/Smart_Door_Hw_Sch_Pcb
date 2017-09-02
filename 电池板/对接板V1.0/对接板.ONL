@@ -1,0 +1,86 @@
+(PCB 对接板
+ (description
+  (timeStamp "2017 02 04 13 19 10")
+  (program "CAPTURE.EXE" (Version "16.5.0.p001"))
+  (source "Original data from OrCAD/CAPTURE schematic")
+  (title "")
+  (date "Saturday, February 04, 2017")
+  (document "D:\\WORKSTATION\\DOOR_LOCK\\电池板\\对接板V1.0\\对接板.DSN")
+  (revision "")
+  (organization "")
+  (address1 "")
+  (address2 "")
+  (address3 "")
+  (address4 "")
+  (partvaluecombine "{Value}")
+  (pcbfootprintcombine "{PCB Footprint}"))
+ (structure )
+ (placement
+  (component CON3
+   (place J2
+    (property 
+     ("PCB Footprint" "XH2.5MM-3P")
+     (timestamp 000000A0)
+     ("Source Package" CON3)
+     (Value CON3))))
+  (component CON5
+   (place J1
+    (property 
+     ("PCB Footprint" BOARD_BAT_CON)
+     (timestamp 00000030)
+     ("Source Package" CON5)
+     (Value CON5)))))
+ (library
+  (image CON5
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\CONNECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname 3)
+     (pintype 4)))
+   (pin 999 4
+    (property 
+     (pinname 4)
+     (pintype 4)))
+   (pin 999 5
+    (property 
+     (pinname 5)
+     (pintype 4))))
+  (image CON3
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\CONNECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname 3)
+     (pintype 4)))))
+ (network
+  (net GND
+    (property 
+     (nettype S))
+   (pins
+     J1-4 J1-5 J2-1))
+  (net N00515
+   (pins
+     J1-3 J2-2))
+  (net VCC_8V
+    (property 
+     (nettype S))
+   (pins
+     J1-1 J1-2 J2-3)))
+)

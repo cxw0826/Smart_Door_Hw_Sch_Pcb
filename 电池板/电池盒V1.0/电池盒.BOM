@@ -1,0 +1,23 @@
+  Revised: Saturday, February 04, 2017
+          Revision: 
+
+
+
+
+
+
+
+Bill Of Materials       February 5,2017      11:13:49	Page1
+
+Item	Quantity	Reference	Part	PCB Footprint
+______________________________________________
+
+1	2	C1,C3	0.1UF	C0603
+2	2	C2,C4	22UF	C0603
+3	1	D1	SS34	SOD-123
+4	1	J1	CON5	BOARD_BAT
+5	1	J2	micro-usb	MICRO-USB-5P
+6	1	L1	4.7UH	L0603
+7	1	R1	62K	R0603
+8	1	R2	5K	R0603
+9	1	U1	ME2159AM6G	SOT-23-6

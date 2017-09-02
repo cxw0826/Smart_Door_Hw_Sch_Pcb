@@ -1,0 +1,79 @@
+(PCB USB_V10
+ (description
+  (timeStamp "2017 02 01 15 13 35")
+  (program "CAPTURE.EXE" (Version "16.5.0.p001"))
+  (source "Original data from OrCAD/CAPTURE schematic")
+  (title "")
+  (date "Wednesday, February 01, 2017")
+  (document "D:\\WORKSTATION\\DOOR_LOCK\\µÁ≥ÿ∞Â\\USB–°∞ÂV1.0\\USB_V10.DSN")
+  (revision "")
+  (organization "")
+  (address1 "")
+  (address2 "")
+  (address3 "")
+  (address4 "")
+  (partvaluecombine "{Value}")
+  (pcbfootprintcombine "{PCB Footprint}"))
+ (structure )
+ (placement
+  (component CON2
+   (place J2
+    (property 
+     ("PCB Footprint" "SH1.0-2P")
+     (timestamp 00000049)
+     ("Source Package" CON2)
+     (Value CON2))))
+  (component "micro-usb"
+   (place J1
+    (property 
+     ("PCB Footprint" "micro-usb-5p")
+     (timestamp 00000030)
+     ("Source Package" "micro-usb")
+     (Value "micro-usb")))))
+ (library
+  (image "micro-usb"
+   (property 
+    (sourcelib D:\\WORKSTATION\\CENTRAL_LIB\\SCH\\CENTRAL_LIB_SCH.OLB))
+   (pin 999 1
+    (property 
+     (pinname VBUS)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname "D-")
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname D+)
+     (pintype 4)))
+   (pin 999 4
+    (property 
+     (pinname ID)
+     (pintype 4)))
+   (pin 999 5
+    (property 
+     (pinname GND)
+     (pintype 4))))
+  (image CON2
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\CONNECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)))))
+ (network
+  (net GND
+    (property 
+     (nettype S))
+   (pins
+     J1-5 J2-2))
+  (net VCC_5V
+    (property 
+     (nettype S))
+   (pins
+     J1-1 J2-1)))
+)

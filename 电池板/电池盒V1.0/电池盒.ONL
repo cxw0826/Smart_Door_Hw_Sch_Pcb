@@ -1,0 +1,232 @@
+(PCB µç³ØºÐ
+ (description
+  (timeStamp "2017 02 04 13 08 31")
+  (program "CAPTURE.EXE" (Version "16.5.0.p001"))
+  (source "Original data from OrCAD/CAPTURE schematic")
+  (title "")
+  (date "Saturday, February 04, 2017")
+  (document "D:\\WORKSTATION\\DOOR_LOCK\\µç³Ø°å\\µç³ØºÐV1.0\\µç³ØºÐ.DSN")
+  (revision "")
+  (organization "")
+  (address1 "")
+  (address2 "")
+  (address3 "")
+  (address4 "")
+  (partvaluecombine "{Value}")
+  (pcbfootprintcombine "{PCB Footprint}"))
+ (structure )
+ (placement
+  (component "CAP NP"
+   (place C1
+    (property 
+     ("PCB Footprint" C0603)
+     (timestamp 0000F4C8)
+     ("Source Package" "CAP NP")
+     (Value 0.1UF)))
+   (place C2
+    (property 
+     ("PCB Footprint" C0603)
+     (timestamp 0000F515)
+     ("Source Package" "CAP NP")
+     (Value 22UF)))
+   (place C3
+    (property 
+     ("PCB Footprint" C0603)
+     (timestamp 0000F6FA)
+     ("Source Package" "CAP NP")
+     (Value 0.1UF)))
+   (place C4
+    (property 
+     ("PCB Footprint" C0603)
+     (timestamp 0000F70C)
+     ("Source Package" "CAP NP")
+     (Value 22UF))))
+  (component CON5
+   (place J1
+    (property 
+     ("PCB Footprint" BOARD_BAT)
+     (timestamp 00000030)
+     ("Source Package" CON5)
+     (Value CON5))))
+  (component DIODE
+   (place D1
+    (property 
+     ("PCB Footprint" "SOD-123")
+     (timestamp 0000F62F)
+     ("Source Package" DIODE)
+     (Value SS34))))
+  (component ME2159AM6G
+   (place U1
+    (property 
+     ("PCB Footprint" "SOT-23-6")
+     (timestamp 0000F4AA)
+     ("Source Package" ME2159AM6G)
+     (Value ME2159AM6G))))
+  (component "micro-usb"
+   (place J2
+    (property 
+     ("PCB Footprint" "MICRO-USB-5P")
+     (timestamp 000000A1)
+     ("Source Package" "micro-usb")
+     (Value "micro-usb"))))
+  (component INDUCTOR
+   (place L1
+    (property 
+     ("PCB Footprint" L0603)
+     (timestamp 0000F5EA)
+     ("Source Package" INDUCTOR)
+     (Value 4.7UH))))
+  (component R
+   (place R1
+    (property 
+     ("PCB Footprint" R0603)
+     (timestamp 0000F67C)
+     ("Source Package" R)
+     (Value 62K)))
+   (place R2
+    (property 
+     ("PCB Footprint" R0603)
+     (timestamp 0000F68E)
+     ("Source Package" R)
+     (Value 5K)))))
+ (library
+  (image ME2159AM6G
+   (property 
+    (sourcelib D:\\WORKSTATION\\CENTRAL_LIB\\SCH\\CENTRAL_LIB_SCH.OLB))
+   (pin 999 1
+    (property 
+     (pinname LX)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname GND)
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname FB)
+     (pintype 4)))
+   (pin 999 4
+    (property 
+     (pinname EN)
+     (pintype 4)))
+   (pin 999 5
+    (property 
+     (pinname VIN)
+     (pintype 4)))
+   (pin 999 6
+    (property 
+     (pinname NC)
+     (pintype 4))))
+  (image R
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4))))
+  (image INDUCTOR
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4))))
+  (image "CAP NP"
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4))))
+  (image CON5
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\CONNECTOR.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname 3)
+     (pintype 4)))
+   (pin 999 4
+    (property 
+     (pinname 4)
+     (pintype 4)))
+   (pin 999 5
+    (property 
+     (pinname 5)
+     (pintype 4))))
+  (image "micro-usb"
+   (property 
+    (sourcelib D:\\WORKSTATION\\CENTRAL_LIB\\SCH\\CENTRAL_LIB_SCH.OLB))
+   (pin 999 1
+    (property 
+     (pinname VBUS)
+     (pintype 4)))
+   (pin 999 2
+    (property 
+     (pinname "D-")
+     (pintype 4)))
+   (pin 999 3
+    (property 
+     (pinname D+)
+     (pintype 4)))
+   (pin 999 4
+    (property 
+     (pinname ID)
+     (pintype 4)))
+   (pin 999 5
+    (property 
+     (pinname GND)
+     (pintype 4))))
+  (image DIODE
+   (property 
+    (sourcelib D:\\CADENCE\\SPB_16.5\\TOOLS\\CAPTURE\\LIBRARY\\DISCRETE.OLB))
+   (pin 999 2
+    (property 
+     (pinname A)
+     (pintype 4)))
+   (pin 999 1
+    (property 
+     (pinname K)
+     (pintype 4)))))
+ (network
+  (net GND
+    (property 
+     (nettype S))
+   (pins
+     J1-4 J1-5 J2-5 U1-2 C1-2 C2-2 R2-2 C4-2 C3-2))
+  (net N62962
+   (pins
+     U1-1 L1-2 D1-2))
+  (net N63066
+   (pins
+     U1-3 R1-2 R2-1))
+  (net VCC_5V
+    (property 
+     (nettype S))
+   (pins
+     J2-1 U1-4 U1-5 C1-1 C2-1 L1-1))
+  (net VCC_8V
+    (property 
+     (nettype S))
+   (pins
+     J1-1 J1-2 D1-1 R1-1 C4-1 C3-1)))
+)
