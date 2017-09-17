@@ -15,7 +15,8 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources" ".\driver_board_v1.5.dsn")
-      (Path "Design Resources" ".\driver_board_v1.5.dsn" "SCHEMATIC1"))
+      (Path "Design Resources" ".\driver_board_v1.5.dsn" "SCHEMATIC1")
+      (Select "Design Resources" ".\driver_board_v1.5.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -25,77 +26,77 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 75 1186 75 484")
-        (Scroll "399 80")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -30 50 1646 50 671")
+        (Scroll "-171 0")
+        (Zoom "73")
         (Occurrence "/"))
       (Path
-         "D:\WORKSTATION\GITSTATION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
+         "D:\WORKSTATION\GIT_WORKSTAION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
       (Schematic "SCHEMATIC1")
       (Page "01: DOOR_MOTOR"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 100 1211 100 509")
-        (Scroll "0 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -30 75 1671 75 696")
+        (Scroll "-177 0")
+        (Zoom "103")
         (Occurrence "/"))
       (Path
-         "D:\WORKSTATION\GITSTATION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
+         "D:\WORKSTATION\GIT_WORKSTAION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
       (Schematic "SCHEMATIC1")
       (Page "02: BAT_KEYS"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 125 1236 125 534")
-        (Scroll "0 150")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -30 100 1696 100 721")
+        (Scroll "-172 0")
+        (Zoom "103")
         (Occurrence "/"))
       (Path
-         "D:\WORKSTATION\GITSTATION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
+         "D:\WORKSTATION\GIT_WORKSTAION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
       (Schematic "SCHEMATIC1")
       (Page "03: CLOSE_DETECT"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 150 1261 150 559")
-        (Scroll "-143 0")
-        (Zoom "47")
+        (Placement "44 0 1 -1 -1 -8 -30 125 1721 125 746")
+        (Scroll "-171 0")
+        (Zoom "73")
         (Occurrence "/"))
       (Path
-         "D:\WORKSTATION\GITSTATION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
+         "D:\WORKSTATION\GIT_WORKSTAION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
       (Schematic "SCHEMATIC1")
       (Page "04: POWER_SUPPLY"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 175 1286 175 584")
-        (Scroll "0 68")
-        (Zoom "94")
+        (Placement "44 0 1 -1 -1 -8 -30 150 1746 150 771")
+        (Scroll "0 60")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "D:\WORKSTATION\GITSTATION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
+         "D:\WORKSTATION\GIT_WORKSTAION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
       (Schematic "SCHEMATIC1")
       (Page "05: MCU"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 0 1111 0 409")
-        (Scroll "0 90")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -30 175 1771 175 796")
+        (Scroll "-172 0")
+        (Zoom "103")
         (Occurrence "/"))
       (Path
-         "D:\WORKSTATION\GITSTATION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
+         "D:\WORKSTATION\GIT_WORKSTAION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
       (Schematic "SCHEMATIC1")
       (Page "06: VOICE"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 25 1136 25 434")
-        (Scroll "-146 0")
-        (Zoom "66")
+        (Placement "44 0 1 -1 -1 -8 -30 200 1796 200 821")
+        (Scroll "-172 0")
+        (Zoom "103")
         (Occurrence "/"))
       (Path
-         "D:\WORKSTATION\GITSTATION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
+         "D:\WORKSTATION\GIT_WORKSTAION\SMART_DOOR_HW_SCH_PCB\后主板\V1.5\DRIVER_BOARD_V1.5.DSN")
       (Schematic "SCHEMATIC1")
       (Page "07: RF_433MHZ"))))
